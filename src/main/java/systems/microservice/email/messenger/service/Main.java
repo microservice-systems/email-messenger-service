@@ -32,7 +32,7 @@ public class Main {
         session.setDebug(true);
         try {
             Store store = session.getStore("imap");
-            store.connect("mailbox.domoy.ru", 143,"vitrina-prod-monitoring@domoy.ru", "hopw6HgAL92opeu7mKf");
+            store.connect("mailbox.domoy.ru", 143, "address@host.com", "password");
             Folder folder = store.getFolder("Inbox");
             folder.open(Folder.READ_ONLY);
 //            int c = folder.getMessageCount();
